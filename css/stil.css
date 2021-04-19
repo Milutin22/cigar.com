@@ -265,6 +265,7 @@ h3 {
     background-size: cover;
     background-attachment: fixed;
     clear: both;
+    border-radius: 18%;
 }
 
 .podnozje {
