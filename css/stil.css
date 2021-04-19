@@ -1,0 +1,862 @@
+/*---------------------------fontovi-------------------------------------------*/
+
+@font-face {
+  font-family: 'notoB';
+  src: url(../font/NotoSerif-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'notoR';
+    src: url(../font/NotoSerif-Regular.ttf);
+  }
+
+@font-face {
+    font-family: 'montB';
+    src: url(../font/Montserrat-Bold.ttf);
+  }
+
+@font-face {
+    font-family: 'montM';
+    src: url(../font/Montserrat-Medium.ttf);
+  }
+
+@font-face {
+    font-family: 'montR';
+    src: url(../font/Montserrat-Regular.ttf);
+  }
+
+/*------------------------------------------------------------------------------*/  
+/*------------------------------------------------------------------------------*/
+
+/*-----------------------klase za JS-------------------------*/
+
+.vidljiv {
+    filter: opacity(0.9);
+    transition: all 0.8s;
+    animation: sDesna 0.5s;
+}
+
+@keyframes sDesna {
+    0% {left: 120vw;}
+    100% {left: 85vw;}
+}
+
+.nevidljiv {
+    filter: opacity(0);
+    transition: all 0.5s;
+    visibility: hidden;
+}
+
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------index strana-------------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.gradient {
+    height: 200px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0)); 
+}
+
+.baner {
+    height: 75vh;
+    background: url(../slike/baner.jpg) 0 -340px no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    margin: 0 40px;
+}
+
+.leviCosak {
+    position: absolute;
+    top: 60px;
+    left: 45px;
+}
+
+a.logo {
+    font-family: 'notoB';
+    font-size: 49px;
+    color: #ddca7d;
+    text-decoration: none;
+    margin-left: 58px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 80px;
+    width: 200px;
+    vertical-align: top;
+}
+
+ul li:nth-child(1) {
+     margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: montB;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-top: 13%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav ul li:nth-child(1) {
+    background-color: #ddca7d;
+    transition: background-color 0.2s;
+}
+
+nav ul li:nth-child(1):hover {
+    background-color: transparent;
+    border: 2px solid #ddca7d;
+    box-sizing: border-box;
+} 
+
+nav ul li:nth-child(1):hover a {
+    color:  #ddca7d;
+}
+
+nav ul li:nth-child(2) {
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+nav ul li:nth-child(2):hover {
+    background-color: transparent;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+nav ul li:nth-child(2):hover a {
+    color: white;
+}
+
+nav ul li:nth-child(1) a {
+    color: white;
+}
+
+nav ul li:nth-child(2) a {
+    color: black;
+}
+
+
+
+/*---main---*/
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: notoR;
+    font-size: 5rem;
+    color: #533e2d;
+}
+
+main p {
+    font-family: montR;
+    padding: 10px 24% 40px 24%;
+    font-size: 21px;
+}
+
+
+
+/*---sastav---*/
+
+.braonPresek {
+    height: 10vh;
+    background-color:  #533e2d;
+}
+
+.sastav {
+    height: 70vh;
+    background: url('../slike/sastav tompusa.png') no-repeat center;
+    background-size: 68%; 
+    background-color:#ddca7d;
+}
+
+.sastav h1 {
+    color: white;
+    margin-left: 55px;
+    line-height: 2;
+}
+
+.pasusPrvi, .pasusDrugi, .pasusTreci {
+    width: 30%;
+    float: left;
+    text-align: center;
+    height: 250px;
+    line-height: 1.5em;
+    margin-top: 40px; 
+}
+
+h3 {
+    margin-bottom: 25px;
+} 
+
+.pasusPrvi {
+    margin-left: 2.5%;
+}
+
+.pasusDrugi {
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.pasusTreci {
+    margin-right: 2.5%;
+}
+
+.sadrzaj::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.kontejner {
+    height: 200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.crtica::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    border-bottom: 9px solid #ddca7d;
+    margin: 0 auto;
+}
+
+.sadrzaj p {
+    font-family: montM;
+    font-size: 16px;
+    height: 100%;
+}
+
+.sadrzaj h3 {
+    font-family: montR;
+    font-size: 43px;
+    color: #533e2d;
+}
+
+
+
+/*---podnozje---*/
+
+#zakacena {
+    height: 200px;
+    width: 90%;
+    margin: 0 auto;
+    background: url(../slike/poredjane.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    clear: both;
+}
+
+.podnozje {
+    margin-top: 100px;
+}
+
+.podnozje p {
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 21px;
+    font-family: montR;
+    line-height: 25px;
+}
+
+.centrirati {
+    text-align: center;
+}
+
+button {
+    height: 120px;
+    width: 350px;
+    background-color: #ddca7d;
+    transition: background-color 0.2s;
+    border: none;
+    color: white;
+    font-family: montB;
+    font-size: 35px;
+}
+
+.centrirati a:hover button {
+    background-color: transparent;
+    border: 5px solid #ddca7d;
+    box-sizing: border-box;
+    color:#ddca7d;
+    cursor: pointer;
+}
+
+
+
+/*---footer---*/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 25vh;
+    margin-top: 50px;
+    padding-top: 20vh;
+    font-family: montR;
+    font-size: 0.8em;
+}
+
+footer p {
+    clear: both;
+}
+
+section.logoi {
+    margin: 0 auto 0px auto;
+    width: 43vw;
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.brend {
+    width: 16.6%;
+    height: 90px;
+    float: left;
+}
+
+.cohiba {
+    background: url(../slike/logoi/cohiba.png) no-repeat center;
+    background-size: 80%;
+}
+
+.montecristo {
+    background: url(../slike/logoi/montecristo.png) no-repeat center;
+    background-size: 85%;
+}
+
+.romeo {
+    background: url(../slike/logoi/romeoyjulieta.png) no-repeat center;
+    background-size: 111%;
+}
+
+.hupmann {
+    background: url(../slike/logoi/hupmann.png) no-repeat center;
+    background-size: 95%;
+}
+
+.trinidad {
+    background: url(../slike/logoi/trinidad.png) no-repeat center;
+    background-size: 56%;
+}
+
+.partagas {
+    background: url(../slike/logoi/partagas.png) no-repeat center;
+    background-size: 95%;
+}
+
+/*------------------------------------------------------------------------------*/  
+/*------------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------poruci strana-------------------------------------------*/
+
+.baner2 {
+    height: 400px;
+    background: url(../slike/uRuci.jpg) -84px -453px no-repeat;
+    background-size: 110%;
+}
+
+nav.poruciStrana ul li:nth-child(2) {
+    background-color: #ddca7d;
+    transition: background-color 0.2s;
+}
+
+nav.poruciStrana ul li:nth-child(2):hover {
+    background-color: transparent;
+    border: 2px solid #ddca7d;
+    box-sizing: border-box;
+} 
+
+nav.poruciStrana ul li:nth-child(2):hover a {
+    color:  #ddca7d;
+}
+
+nav.poruciStrana ul li:nth-child(2) a {
+    color:  white;
+}
+
+nav.poruciStrana ul li:nth-child(1) {
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+nav.poruciStrana ul li:nth-child(1):hover {
+    background-color: transparent;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+nav.poruciStrana ul li:nth-child(1):hover a {
+    color: white;
+}
+
+nav.poruciStrana ul li:nth-child(1) a {
+    color: black;
+}
+
+
+
+/*---main---*/
+
+.main2 h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.main2 section {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.main2 section .kontejner2 div {
+    width: 48.5%;
+    height: 370px;
+    float: left;
+    background: url(../slike/poredjane2.jpg) no-repeat right;
+    /* background-size: cover; */
+    transition: all 0.4s;
+}
+
+.main2 section .kontejner2 div:hover {
+    filter:sepia(1);
+    background-position: -150px 0;
+}
+
+.main2 section div.kontejner2 div:nth-child(odd) {
+    margin-right: 3%;
+}
+
+.main2 section div.kontejner2 div:nth-child(3), .main2 section div.kontejner2 div:nth-child(4) {
+    margin-top: 3%;
+}
+
+section .kontejner2 a {
+    line-height: 12em;
+    font-size: 2em;
+    font-family: montB;
+    font-weight: bolder;
+    color: #ddca7d;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*----------------------------responsive---------------------------------*/
+
+
+
+/*---pocetna---*/
+
+@media screen and (max-width:1350px) {
+    
+    .baner {
+        height: 65vh;
+        background: url(../slike/baner.jpg) 0 -250px no-repeat;
+        background-size: cover;
+    }
+
+
+
+    .sadrzaj p {
+        height: 35vh;
+        font-size: 13.5px;
+        line-height: 1.5;
+    }
+    
+    .sadrzaj h3 {
+        font-size: 40px;
+    }
+
+
+
+    .podnozje {
+        margin-top: 100px;
+   }
+
+    
+
+    footer {
+        padding-top: 10vh;
+        height: 30vh;
+        font-size: 0.6em;
+    }
+    
+    section.logoi {
+        width: 20vw;
+    }
+    
+    .brend {
+        width: 33.3%;
+    }
+
+}
+
+
+
+@media screen and (max-width:1100px) {
+
+    .baner {
+        height: 65vh;
+        background: url(../slike/baner.jpg) 0 -160px no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+     
+    .sastav {
+        height: 50vh;
+    }
+
+
+
+    .sadrzaj h3 {
+        font-size: 35px;
+    }
+
+    
+
+    .podnozje p {
+    width: 60%;
+    margin: 40px auto;
+    font-size: 18px;
+    line-height: 25px;
+    }
+
+  }
+
+
+
+@media screen and (max-width:950px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .baner {
+        height: 35vh;
+        background: url(../slike/baner.jpg) 0px -320px no-repeat;
+        background-size: 130%;
+        margin-bottom: 7px;
+    }
+
+    .gradient {
+        height: 200px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); 
+    }
+
+    .leviCosak {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    a.logo {
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 45%;
+        height: 60px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+
+
+    main p {
+        padding: 10px 10% 40px 10%;
+    }
+
+    .braonPresek {
+        height: 5vh;
+    }
+
+
+
+    .crtica {
+        display: none;
+    }
+
+
+
+    .pasusPrvi {
+        width: 40%;
+        margin-left: 4%;
+        margin-right: 5%;
+        font-size: 20px;
+        height: auto
+    }
+
+    .pasusDrugi {
+        width: 40%;
+        margin-right: 4%;
+        margin-left: 5%;
+        font-size: 20px;
+        height: auto
+    }
+
+    .pasusTreci {
+        margin: 40px 25vw 0 25vw;
+        width: 40%;
+        font-size: 20px;
+        height: auto
+    }
+
+    .sadrzaj p {
+        height: auto;
+    }
+
+    .sadrzaj h3 {
+        margin-bottom: 9px;
+        font-size: 30px;
+    }
+
+
+
+    button {
+        height: 90px;
+        width: 300px;
+        font-size: 28px;
+    }
+
+
+
+    section.logoi {
+        margin-top: 3%;
+    }
+
+    .brend {
+        height: 50px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:650px) {
+
+    .baner {
+        height: 200px;
+        background: url(../slike/baner.jpg) 0px -150px no-repeat;
+        background-size: 130%;
+    }
+
+    .leviCosak {
+        top: 3vh;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+
+
+    .sastav {
+        height: 32vh;
+        background-position-y: 100%;
+        background-size: 50vh;
+    }
+
+
+    .sadrzaj {
+        height: 500px;
+    }
+
+    main p {
+        font-size: 18px;
+        padding: 4px 0 40px 0;
+    }
+
+    .pasusPrvi, .pasusDrugi, .pasusTreci {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        margin-top: 23px;
+    }
+
+    .pasusPrvi p, .pasusDrugi p, .pasusTreci p {
+        height: auto;
+        font-size: 16px;
+    }
+
+
+
+    .podnozje {
+        margin-top: 30px;
+    }
+
+    .podnozje p {
+        width: 80%;
+    }
+
+
+
+    button {
+        height: 70px;
+        width: 230px;
+        font-size: 24px;
+    }
+
+
+
+    footer {
+        height: 20vh;
+    }
+
+}
+
+
+@media screen and (max-width:320px) {
+
+    .baner {
+        background-position-y: -20px;
+    }
+
+    .leviCosak a.logo {
+        font-size: 30px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50px;
+    }
+
+    ul li:nth-child(1) {
+        margin-right: auto;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+
+
+    .sastav {
+        background-size: 43vh;
+        height: 32vh;
+    }
+
+
+
+    #zakacena {
+        height: 50px;
+        width: 100%;
+        margin: 0;
+    }
+
+
+
+    button {
+        height: 50px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+}
+
+
+
+/*---poruci---*/
+
+@media screen and (max-width:1350px) {
+    .baner2 {
+        height: 35vh;
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    .baner2 {
+        background-position: -9px -253px;
+        height: 35vh;
+    }
+
+    .main2 section .kontejner2 div {
+        height: 220px;
+    }
+    .main2 section .kontejner2 div a {
+        line-height: 7.5;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .baner2 {
+        background-position: -9px center;
+    }
+
+    .main2 section .kontejner2 div {
+        width: 100%;
+        height: 270px;
+        margin: 5% 0 0 0;
+    }
+
+    .main2 section .kontejner2 div a {
+        line-height: 9;
+        font-size: 25px;
+    }
+
+    .main2 h1 {
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .main2 section .kontejner2 div  {
+        height: 200px;
+    }
+
+    .main2 section .kontejner2 div a {
+        font-size: 20px;
+        line-height: 10;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .baner2 {
+        background-position: -9px top;
+    }
+
+    .main2 h1 {
+        margin-top: 0;
+    }
+}
